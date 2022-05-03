@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Quicksand:wght@300;700&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <style>
+        body{
+             /* For browsers that do not support gradients */
+             background-color: #7986CB; /* For browsers that do not support gradients */
+            background-image: linear-gradient(#7986CB, white);
+            text-align: center;
+            font-size: large;
+            height: 300%;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .buttons{
+            padding-top: 30px;
+            width:250px;
+            margin: 10px;
+           
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            background-color: #F7F6FA;
+            text-align: center;
+            border: 1px solid #8E99D3;
+            color: black;
+            cursor: pointer;
+            border-radius: 25px;
+
+        }
+        button:hover{
+            background-color:#8E99D3;
+            border: 1px solid #5a66a1
+         }
+        .stop{
+        
+        margin: 5px;
+        background-color:#f08080;
+        padding: 12px;
+        border: #f8ad9d;
+        padding: 20px;
+        width: 120px;
+        border-radius: 30px;
+        }
+        .stop:hover{
+            border: 1px solid #f08080 ;
+            background-color: #e56b6f;
+        }
+        .grid{
+            border:2px solid black;
+            width:60%;
+            margin-bottom: 100px;
+            margin-left: 250px;
+            border:2px solid #CDD1EA;
+            border-radius: 5%;
+            height: 500px;
+            position: absolute;
+            
+        }
+        .qs{
+            padding: 10px;
+            background-color: #F7F6FA;
+            width:500px;
+            margin-left: 120px ;
+            border: 1px solid #8E99D3;
+            border-radius: 25px;
+        }
+        table{
+            margin-left: 105px;
+        }
+      h1{
+          font-family: 'Quicksand', sans-serif;
+      }
+       h2{
+        font-size: 20px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .c1{
+        width:220px;
+        height: 200px;
+        float: left;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-bottom: 500px;
+    }  
+    .c2{
+        width:300px;
+        height: 300px;
+        float:right;
+        margin-top: 400px;
+        margin-right: 0;
+    }
+    #countdown{
+        border: 2px solid #8E99D3;
+        width:10%;
+        margin-left: 555px;
+        background-color: inherit;
+        padding: 5px;
+        border-radius: 25px;
+        color: #CDD1EA;
+        margin-top: 10px;
+        
+    }
+        
+        
+    </style>
+    
+</head>
+
+<body >
+    <div id="outer-div">
+        <div id="countdown"></div>
+        <img class="c1" src="circle.png" alt="c">
+        <div class="grid" id="inner-div">
+            <div id="quiz">
+                <h1>Test in JavaScript </h1>
+                <p id="demo"></p>
+        
+                <div class="qs">
+                    <p id="question"></p>
+                </div>
+        
+                <div>
+                    <table>
+                        <tr>
+                            <td><button class="buttons" id="btn0"><span id="choice0"></span></button></td>
+                            <td><button class="buttons" id="btn1"><span id="choice1"></span></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="buttons" id="btn2"><span id="choice2"></span></button></td>
+                            <td><button class="buttons" id="btn3"><span id="choice3"></span></button></td>
+        
+                        </tr>
+                    </table>
+                </div>
+        
+        
+        
+                <footer>
+                    <p id="progress">Question x of y</p>
+                    <button class="stop" onclick="history.back()">Stop</button>
+                </footer>
+            </div>
+        </div>
+        <img class="c2" src="circle.png" alt="c">
+        
+        
+        <script src="question.js"></script>
+    </div>
+    
+
+</body>
+
+</html>
